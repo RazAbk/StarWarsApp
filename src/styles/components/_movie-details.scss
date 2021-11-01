@@ -1,9 +1,13 @@
-
+.movie-details{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
 .mobile-hamburger-btn{
 
+    cursor: pointer;
 
     @include for-tablet{
         display: none;

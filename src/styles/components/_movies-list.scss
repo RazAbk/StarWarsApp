@@ -1,4 +1,5 @@
 .movies-sidebar{
+    z-index: 100;
     height: 100%;
     width: 15rem;
     background-color: rgb(143, 143, 143);
@@ -13,9 +14,25 @@
         
         width: 20rem;
     }
+
+    h2{
+        border-bottom: 1px white solid;
+        text-align: center;
+        padding: 1rem;
+    }
     
 }
 
 .show{
     transform: translateX(0%);
+}
+
+.movie-preview{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    border-bottom: 1px white solid;
 }
