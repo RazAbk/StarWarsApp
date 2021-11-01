@@ -1,0 +1,22 @@
+.starwars-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container{
+    display: flex;
+    background-color: rgba(46, 46, 46, 0.534);
+    width: 100%;
+    max-width: 1500px;
+    height: 100%;
+    
+    @include for-tablet{
+        width: 90vw;
+        height: 90vh;
+        border-radius: 20px;
+    }
+
+    
+}
