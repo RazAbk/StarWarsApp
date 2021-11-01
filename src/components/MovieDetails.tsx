@@ -19,6 +19,7 @@ export const MovieDetails = ({ setMobileMenu, currentMovie, onToggleFavorite }: 
         <>
             <GiHamburgerMenu className="mobile-hamburger-btn" onClick={toggleMobileMenu} />
             <div className="movie-details">
+                <div className="background-image"></div>
                 {currentMovie &&
                     <>
                         <div className="movie-details-top">

@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     padding: 4rem 1rem 1rem 1rem;
-
+    background-color: rgba(58, 58, 58, 0.25);
+    
     overflow-y: auto;
 
     h2{
@@ -79,4 +80,40 @@
     @include for-tablet{
         display: none;
     }
+}
+
+.background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-image: url('../../assets/images/star-wars-6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: background-images ease-in-out 60s infinite backwards;
+}
+
+@keyframes background-images {
+    0%{
+        background-image: url('../../assets/images/star-wars-1.jpg');
+    }    
+    20%{
+        background-image: url('../../assets/images/star-wars-2.jpg');
+    }    
+    40%{
+        background-image: url('../../assets/images/star-wars-3.jpg');
+    }    
+    60%{
+        background-image: url('../../assets/images/star-wars-4.jpg');
+    }    
+    80%{
+        background-image: url('../../assets/images/star-wars-5.jpg');
+    }    
+    100%{
+        background-image: url('../../assets/images/star-wars-6.jpg');
+    }    
 }
