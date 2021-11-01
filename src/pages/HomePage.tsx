@@ -17,9 +17,11 @@ export const HomePage = () => {
                             <h1>A New Episode</h1>
                         </div>
 
-                        <p>It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.</p>
-                        <p>During the battle, Rebel spies managed to steal secret plans to the Empire’s ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.</p>
-                        <p>Pursued by the Empire’s sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy…</p>
+                        <p>Hey, I'm Raz,</p>
+                        <p>a Full-Stack / Front-End developer</p>
+                        <p>I’m looking for a meaningful position, a one that will challenge me and allow me to create value for others.</p>
+                        <p>I am a dedicated employee, a quick learner and willing to envole.</p>
+                        <p>Creative, flexible and a problem solver, I love working with people and believe I have a lot to contribute to a team.</p>
 
                     </div>
 

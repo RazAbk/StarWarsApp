@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     padding: 4rem 1rem 1rem 1rem;
-    background-color: rgba(58, 58, 58, 0.25);
+    
+    background: linear-gradient(0deg, rgb(29, 29, 29) 0%, rgba(236,236,236,0.1) 50%, rgb(29, 29, 29) 100%);
     
     overflow-y: auto;
 
@@ -34,6 +35,7 @@
     }
     
     @include for-tablet{
+        border-radius: 0 20px 20px 0;
         padding: 1.5rem 3rem;
         
         h2{
@@ -94,7 +96,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    animation: background-images ease-in-out 60s infinite backwards;
+    
+
+    animation: background-images 90s infinite backwards;
 }
 
 @keyframes background-images {
