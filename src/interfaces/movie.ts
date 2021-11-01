@@ -13,4 +13,5 @@ export interface IMovieProps {
     title: string
     url: string
     vehicles: string[]
+    isFavorite?: boolean
 }

@@ -1,17 +1,18 @@
 import axios from "axios"
 import { localStorageService } from "./local-storage.service"
+import { IMovieProps } from "../interfaces/movie"
 
 export const movieService = {
-    getMovies
+    getMovies,
+    toggleFavorite
 }
 
 const API_URL = 'https://swapi.dev/api/films'
 const MOVIES_KEY = 'sw_movies'
-// const FAVORITE_MOVIES_KEY = 'sw_fav_movies'
 
 async function getMovies() {
     let moviesCache = localStorageService.load(MOVIES_KEY) || []
-
+    
     // Return movies from local storage cache
     if(moviesCache && moviesCache.length > 0) return moviesCache
     
@@ -26,4 +27,13 @@ async function getMovies() {
     } catch(err) {
         console.log('error while getting movies:', err)
     }
+}
+function toggleFavorite(episodeId: number){
+    const moviesCache = localStorageService.load(MOVIES_KEY) || []
+    const idx = moviesCache.findIndex((movie: IMovieProps) => movie.episode_id === episodeId)
+
+    moviesCache[idx].isFavorite = !moviesCache[idx].isFavorite
+
+    localStorageService.save(MOVIES_KEY, moviesCache)
+    return {movies: moviesCache, currentMovie: moviesCache[idx]}
 }

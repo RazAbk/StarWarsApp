@@ -21,12 +21,18 @@ function App() {
     }
     getMovies()
   }, [])
+  
+  const onToggleFavorite = (episodeId: number) => {
+    const data = movieService.toggleFavorite(episodeId)
+    setMovies(data.movies)
+    setCurrentMovie(data.currentMovie)
+  }
 
   return (
     <div className="starwars-app">
       <div className="app-container">
-        <MovieList movies={movies} showMobileMenu={showMobileMenu} setCurrentMovie={setCurrentMovie} />
-        <MovieDetails setMobileMenu={setMobileMenu} currentMovie={currentMovie} />
+        <MovieList movies={movies} showMobileMenu={showMobileMenu} setMobileMenu={setMobileMenu} setCurrentMovie={setCurrentMovie} />
+        <MovieDetails setMobileMenu={setMobileMenu} currentMovie={currentMovie} onToggleFavorite={onToggleFavorite} />
       </div>
       <Screen isOpen={showMobileMenu} exitScreen={setMobileMenu}/>
     </div>
