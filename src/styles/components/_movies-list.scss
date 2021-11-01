@@ -21,7 +21,7 @@
     }
     
     h2{
-        border-bottom: 1px white solid;
+        border-bottom: 1px rgba(165, 165, 165, 0.308) solid;
         text-align: center;
         padding: 1rem;
     }
@@ -35,7 +35,7 @@
 
 .movie-preview{
     padding: 1.2rem 1rem;
-    border-bottom: 1px white solid;
+    border-bottom: 1px rgba(80, 80, 80, 0.246) solid;
     cursor: pointer;
 
     transition: background-color 0.3s;
