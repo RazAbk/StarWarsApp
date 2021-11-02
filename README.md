@@ -8,6 +8,8 @@ In this project I used:\
 • Typescript\
 • Sass
 
+Live page:
+https://condescending-visvesvaraya-a43a53.netlify.app/
 
 ![screen shot](https://user-images.githubusercontent.com/85071405/139757568-77e9ddd8-8bac-4085-8221-1c1886fdbfe1.png)
 
